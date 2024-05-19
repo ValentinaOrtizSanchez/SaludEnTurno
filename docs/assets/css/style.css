@@ -506,3 +506,195 @@ nav{position: fixed;}
     }
     .car-index .sec-car .logo-car{display: none;}
 }
+
+/*---------------REGISTRO DE VACUNAS insumos utilizados---------------*/
+.header-index-vac{
+    height: 17vh;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tabla-gris {
+    background-color: #d4d4d4 !important; /* Color gris claro */
+    border: 2px solid #fff; /* Borde de celda blanco y grueso */
+    border-radius: 20px; /* Borde redondeado */
+    border-collapse: collapse;
+    table-layout: 50px;
+    width: 100%;
+    max-width: none;
+
+}
+.estilo-tabla {
+    width: 95%; /* Ancho máximo deseado */
+    max-width: 1200px; /* Ancho máximo para evitar que la tabla se expanda demasiado en pantallas grandes */
+    margin: auto; /* Para centrar la tabla horizontalmente en el cuerpo */
+    border-collapse: collapse; /* Fusionar bordes de celda */
+    font-family: 'Glacial Indifference', sans-serif; /* Fuente */
+    border-radius: 10px; /* Borde redondeado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:static;
+    top: 300px;
+    width: 100%;
+    height: calc(100 vh - 150px);
+    overflow-x: auto;
+}
+
+.estilo-tabla th, .estilo-tabla td {
+    padding: 10px; /* Espacio interior de celda */
+    text-align: center; /* Alineación del texto centrada */
+    border: 2px solid #fff; /* Borde de celda blanco y grueso */
+    color: #053057; /* Color de letra azul rey */
+    font-weight: bold; /* Negritas */
+    width: 100px;
+}
+
+.estilo-tabla tr {
+    height: 50px; /* Altura fija para todas las filas */
+}
+
+.estilo-tabla td:hover {
+    border-radius: 10px; /* Borde redondeado */
+    background-color: #c2c7ca;
+}
+
+.registro-vacunas {
+    text-decoration: underline; /* Agregar subrayado */
+}
+
+.section-header {
+    text-align: center;
+    position:static;
+}
+
+.section-header .registro-vacunas {
+    color: #053057;
+    font-family: 'Glacial Indifference', sans-serif;
+    margin-bottom: 5px;
+}
+
+.section-header .registro-vacunas2 {
+    color: #053057;
+    font-family: 'Glacial Indifference', sans-serif;
+    margin-bottom: 5px;
+}
+
+.section-header .registro-vacunas-lote {
+    color: #053057;
+    font-family: 'Glacial Indifference', sans-serif;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+
+.section-header p {
+    color: #053057;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 2px; /* Altura de la línea */
+    flex-grow: 1;
+    width: 500px; /* Longitud de la línea */
+    background-color: #053057; /* Color de la línea */
+    margin-left: 200px; /* Espacio entre el texto y la línea */
+    display: -300px;
+}
+
+.section-header p:last-child {
+        margin-left: -880px;
+}
+
+/*===============Estilos del menú desplegable para REGISTRO DE VACUNAS===============*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(10, 82, 124, 0.74); /* Fondo transparente */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra */
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Cambio de color al pasar el mouse */
+}
+
+/*========REGISTRO DE VACUNAS pacientes atendidos=============*/
+
+.formulario {
+    width: 350px; /* Aumenta el ancho del formulario */
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formulario input[type="text"] {
+    width: calc(100%); /* Ajusta el ancho de las cajas de entrada */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #053057;
+    border-radius: 15px;
+    background-color: #ccc8c8;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #053057;
+    color: white;
+    cursor: pointer;
+    flex-basis: 100%;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0A4476;
+}
+
+.input-with-icon1 {
+    position: relative;
+}
+
+.input-with-icon1 input[type="text"] {
+    padding-right: 35px; /* Incrementa el espacio para el icono */
+    background-image: url("assets/img/user.png");
+    background-size: 15px; /* Ajusta el tamaño del icono */
+    background-repeat: no-repeat;
+    background-position: right center; /* Coloca el icono a la derecha y centrado verticalmente */
+}
+
+#alergias,
+#padecimientos {
+    margin-bottom: 15px;
+    width: calc(50%); /* Ajusta el ancho de las cajas de entrada */
+    padding: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; 
+    flex-basis: 48%;
+}
